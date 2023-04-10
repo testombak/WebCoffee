@@ -1,0 +1,368 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee-Shop</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header" id="home">
+      <div class="container">
+        <div class="banner"></div>
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px"/></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="login.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="images/cart.png" class="cart-icon"/></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        <div class="row-1">
+          <div class="col-1">
+            <h1>Fresh <span>Coffee</span><br />In The Morning</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur<br />adipisicing Obcaecati,
+              vel.
+            </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Category -->
+    <div class="categories">
+      <div class="small-container">
+        <h2 class="title">Category</h2>
+        <div class="row">
+          <div class="col-3">
+            <img src="images/coffee9.jpg" />
+            <h4>Food & Snack</h4>
+            <p>
+              Berbagai macam makanan ringan sampai makanan utama siap menemani
+              secangkir kopimu.
+            </p>
+          </div>
+          <div class="col-3">
+            <img src="images/coffee7.jpg" />
+            <h4>Coffee</h4>
+            <p>
+              Dari minunan tradisional berbasis espresso sampai berbagai minuman
+              racikan kopi terkini.
+            </p>
+          </div>
+          <div class="col-3">
+            <img src="images/coffee8.jpg" />
+            <h4>Non Coffee</h4>
+            <p>
+              Kami juga memiliki menu non-coffee untuk kamu yang ingin pilihan
+              lain selain kopi dan untuk anak - anak.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Products -->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <a href="products-detail.html"><img src="images/coffee1.jpg"/></a>
+          <h4>Espresso Based</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee2.jpg" />
+          <h4>Nitro Coffee</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee3.jpg" />
+          <h4>Eskosu</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee4.jpg" />
+          <h4>Chocolate</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+      <h2 class="title">Latest Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/coffee1.jpg" />
+          <h4>Espresso Based</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee2.jpg" />
+          <h4>Espresso Based</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee3.jpg" />
+          <h4>Espresso Based</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee4.jpg" />
+          <h4>Espresso Based</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee1.jpg" />
+          <h4>Espresso Based</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee2.jpg" />
+          <h4>Espresso Based</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee3.jpg" />
+          <h4>Espresso Based</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee4.jpg" />
+          <h4>Espresso Based</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- About -->
+    <div class="about" id="about">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <h1>About Us</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est enim
+              cumque repellendus veniam harum corporis Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Harum dolore, voluptate sint
+              dolor quia est. Provident deleniti cumque quidem modi!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              id exercitationem voluptate fugiat fuga dicta error aliquam ipsam
+              sapiente ut quam voluptates, debitis minus? Nihil, iste
+              accusantium. Reprehenderit, quia ratione?
+            </p>
+          </div>
+          <div class="col-2">
+            <img
+              src="images/Coffee_Toffee_-_Sketsa_Coffee_Bar_02_1x.png"
+              class="about-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Contact -->
+    <h2 class="titlecc">Contact Us</h2>
+    <div class="cc" id="contact">
+      <div class="contact">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">AM Sangaji</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+62812 2512 1872</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">choirulrasyid5@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,
+              saepe dicta accusamus magni architecto illo rem odio voluptas a
+              quisquam expedita explicabo fuga pariatur!
+            </p>
+            <form action="#">
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name" />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Enter your email" />
+              </div>
+              <div class="input-box message-box">
+                <textarea
+                  name=""
+                  id=""
+                  cols="35"
+                  rows="10"
+                  placeholder="How Can I Help You"
+                  required
+                ></textarea>
+              </div>
+              <div class="button">
+                <input type="button" value="Send Now" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Footer -->
+    <section class="end">
+      <div class="last-text">
+        <p>Copyright &copy; 2023 by Choirul | All Rights Reserved.</p>
+      </div>
+      <div class="top">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </section>
+    <!-- End -->
+
+    <!-- JS NAVBAR -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
